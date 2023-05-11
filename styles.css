@@ -28,9 +28,21 @@ h1 {
     text-shadow: 0 3px 3px #816fca;
 }
 
+@media (width >= 576px) {
+    h1 {
+        font-size: 5vw;
+    }
+}
+
 h2 {
     font-size: 2.25rem;
     margin: 0.1667em 0;
+}
+
+@media (width >= 576px) {
+    h2 {
+        font-size: 2.625rem;
+    }
 }
 
 p {
@@ -42,6 +54,12 @@ p {
 .subheading {
     font-weight: 900;
     text-transform: uppercase;
+}
+
+@media (width >= 576px) {
+    .beta-text {
+        font-size: 1.25rem;
+    }
 }
 
 .subheading {
@@ -66,6 +84,7 @@ p {
     .intro {
         flex-basis: 50%;
         min-height: 100vh;
+        padding: 0 2em;
     }
 }
 
