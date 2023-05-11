@@ -27,13 +27,14 @@ p {
     line-height: 1.35;
 }
 
-.beta-text { 
+.beta-text,
+.subheading {
     font-weight: 900;
+    text-transform: uppercase;
 }
 
 .subheading {
     color: #575757;
-    font-weight: 900;
     margin-bottom: 0.3334;
 }
 
