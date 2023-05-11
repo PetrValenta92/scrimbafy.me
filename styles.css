@@ -9,6 +9,17 @@ body {
     margin: 0;
 }
 
+@media (width >= 576px) {
+    body {
+        display: flex;
+    }
+}
+
+/* 
+vh - viewport height, 1vh == 1% of viewport height
+vw - viewport width, 1vw == 1% of viewport width
+*/
+
 /* ------ TYPOGRAPHY ---------- */
 
 h1 {
@@ -42,7 +53,6 @@ p {
     Intro
    ================= */
 
-
 .intro { 
     color: #fff;
     background-color: #9480e4;
@@ -52,6 +62,13 @@ p {
     align-items: center;
 }
 
+@media (width >= 576px) {
+    .intro {
+        flex-basis: 50%;
+        min-height: 100vh;
+    }
+}
+
 /* ====================
     Main content
    ==================== */
@@ -59,6 +76,16 @@ p {
 .main-content {
     align-items: center;
     padding: 2.5em 2em 0;
+}
+
+@media (width >= 576px) {
+    .main-content {
+        flex-basis: 50%;
+        justify-content: center;
+        /* inset: 0;
+        margin: auto; */
+        padding: 0 2em;
+    }
 }
 
 .img-main {
