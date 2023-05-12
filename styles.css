@@ -53,7 +53,6 @@ p {
 .beta-text,
 .subheading {
     font-weight: 900;
-    text-transform: uppercase;
 }
 
 @media (width >= 576px) {
@@ -110,8 +109,7 @@ p {
     .main-content {
         flex-basis: 50%;
         justify-content: center;
-        /* inset: 0;
-        margin: auto; */
+        /* inset: 0; margin: auto; also possible*/
         padding: 0 2em;
     }
 }
@@ -125,14 +123,17 @@ p {
     Form
    ================= */
 
+input,
+.btn {
+    width: 100%;
+    font-family: inherit;
+    border-radius: 5px;
+}
 
 input {
-    font-family: inherit;
-    width: 100%;
     margin-bottom: .75em;
     padding: .5em;
     border: 2px solid #d1d5db;
-    border-radius: 5px;
 }
 
 input:hover,
@@ -143,10 +144,30 @@ input:active {
     background-color: #e6e8ec;
 }
 
+.btn {
+    font-weight: 900;
+    color: #fff;
+    background-color: #8a71ec;
+    border: none;
+    padding: 1em 0;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    background-color: #b7a7f6;
+}
+
 
 /* ------ UTILITY CLASSES ---------- */
 
 .flex {
     display: flex;
     flex-direction: column;
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
