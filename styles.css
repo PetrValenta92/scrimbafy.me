@@ -67,6 +67,12 @@ p {
     margin-bottom: 0.3334;
 }
 
+.fine-print {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: #858585;
+}
+
 /* =================
     Intro
    ================= */
@@ -118,11 +124,24 @@ p {
 /* =================
     Form
    ================= */
-   
 
-/* =================
-    Media queries 
-   ================= */
+
+input {
+    font-family: inherit;
+    width: 100%;
+    margin-bottom: .75em;
+    padding: .5em;
+    border: 2px solid #d1d5db;
+    border-radius: 5px;
+}
+
+input:hover,
+input:focus,
+input:active {
+    outline: none;
+    border: 2px solid #8a71ec;
+    background-color: #e6e8ec;
+}
 
 
 /* ------ UTILITY CLASSES ---------- */
