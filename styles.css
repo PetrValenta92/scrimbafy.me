@@ -66,6 +66,15 @@ p {
     margin-bottom: 0.3334;
 }
 
+.top-text {
+    font-size: .875rem;
+    font-weight: 900;
+    padding-top: .25rem;
+    margin: 0;
+    border-top: 5px solid;
+    order: -1;
+}
+
 .fine-print {
     font-size: 0.75rem;
     letter-spacing: 1px;
@@ -84,15 +93,16 @@ p {
     background-color: #9480e4;
     text-align: center;
     min-height: 250px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding-bottom: 1.5em;
 }
 
 @media (width >= 576px) {
     .intro {
         flex-basis: 50%;
         min-height: 100vh;
-        padding: 0 2em;
+        padding: 0 2em 1.5em;
     }
 }
 
