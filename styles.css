@@ -1,3 +1,11 @@
+/* ------------ RESET ------------------- */
+/* https://andy-bell.co.uk/a-modern-css-reset/ */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 /* ------ CUSTOME PROPERTIES ---------- */
 
 
@@ -19,6 +27,14 @@ body {
 vh - viewport height, 1vh == 1% of viewport height
 vw - viewport width, 1vw == 1% of viewport width
 */
+
+/* 
+box-sizing: border-box převezme kontrolu nad width/heigth elementu, 
+rovnou započítává padding a border
+width = 400px (360px contant + 10px border + 30px padding)
+*/
+
+/* (*) == asterisk, universal selector; slects all elements in html */
 
 /* ------ TYPOGRAPHY ---------- */
 
@@ -109,6 +125,10 @@ p {
 /* ====================
     Main content
    ==================== */
+
+.main-content p, form {
+    max-width: 450px;
+}
 
 .main-content {
     align-items: center;
